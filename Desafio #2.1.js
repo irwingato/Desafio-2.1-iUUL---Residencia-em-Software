@@ -72,11 +72,8 @@ class CPFValidator extends CampoValidator {
     if (resto === 10 || resto === 11) {
       resto = 0;
     }
-    if (resto !== parseInt(cpf.charAt(10))) {
-      return false;
-    }
-
-    return true;
+    return resto === parseInt(cpf.charAt(10));
+    
   }
 }
 
