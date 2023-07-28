@@ -1,3 +1,6 @@
+const fs = require('fs');
+const { DateTime } = require('luxon');
+
 // Classe ClienteValidator, responsável por validar todos os campos do cliente
 class ClienteValidator {
     constructor(validators) {
